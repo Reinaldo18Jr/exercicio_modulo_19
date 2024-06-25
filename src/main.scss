@@ -1,0 +1,23 @@
+@use 'base';
+@use 'layout';
+
+.produto {
+    &__imagem {
+        width: 100%;
+    }
+
+    &__nome {
+        font-size: 1.2em;
+        margin: 8px 0;
+    }
+
+    &__descricao {
+        color: base.$descricaoColor;
+    }
+
+    &--em-destaque {
+        border: 2px solid base.$destaqueBorderColor;
+        padding: 8px;
+        background-color: base.$destaqueBgColor;
+    }
+}
